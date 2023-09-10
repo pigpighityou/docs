@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+
+  <div id="app">loading...</div>
+  <script>
+    window.$docsify = {
+      //标题
+      name: '前端',
+      nameLink: '/',
+      
+    
+      //配置仓库地址，会在页面右上角生成一个 GitHub 图标，点击可以跳转到仓库地址
+      repo: 'http://github.com/pigpighityou',
+      
+      // 自定义边栏启动
+      loadSidebar: true,
+      autoHeader: true,
+      /* loadSidebar: 'summary.md', */
+      //自定义侧边栏后默认不会再生成目录(默认值为0)，你也可以通过设置生成目录的最大层级开启这个功能。
+      subMaxLevel: 4,
+      hideSidebar: false,
+
+      // 自定义导航栏启动
+      /* loadNavbar:false, */
+       loadNavbar: '_navbar.md', 
+
+      // 自定义封面启动
+      /* coverpage:true */
+      coverpage: {
+      // 指定根目录的封面路径以及文件名
+        '/': '_coverpage.md',
+
+      //初始化挂载的元素，默认为#app
+      el: '#app',
+
+      //默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级
+      maxLevel: 4,
+
+      // 切换页面后是否自动跳转到页面顶部
+      auto2top: true,
+
+      //小屏设备下合并导航栏到侧边栏。
+      mergeNavbar: true,
+
+      //外部链接的打开方式。默认为 _blank
+      externalLinkTarget: '_blank',
+
+      //右上角链接的打开方式。默认为 _blank
+      cornerExternalLinkTarget: '_blank',
+
+      //添加字数统计功能1
+      count:{
+      countable:true,
+      fontsize:'0.9em',
+      color:'rgb(90,90,90)',
+      language:'chinese'
+  }
+      
+        
+      },
+
+      // 搜索功能
+      search: 'auto', // 默认值
+      search : [
+        '/index',            
+        '/docs2/index',
+
+      ],
+
+      /* // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+        noData: 'No Results!',
+
+        // 搜索标题的最大层级, 1 - 6
+        depth: 4,
+
+        // 是否隐藏其他侧边栏内容
+        hideOtherSidebarContent: false, 
+
+        // 避免搜索索引冲突
+        // 同一域下的多个网站之间
+        namespace: 'website-1',
+
+        // 使用不同的索引作为路径前缀（namespaces）
+        // 注意：仅适用于 paths: 'auto' 模式
+        // 初始化索引时，我们从侧边栏查找第一个路径
+        // 如果它与列表中的前缀匹配，我们将切换到相应的索引
+        pathNamespaces: ['/', '/docs2/', ],
+
+        
+      },
+ */
+
+
+
+
+}
+
+        
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 添加字数统计功能2 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 搜索功能 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- emoji解析器 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+</body>
+</html>
