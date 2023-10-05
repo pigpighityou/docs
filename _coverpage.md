@@ -4,7 +4,7 @@
 
 
 
-[GitHub](https://github.com/pigpighityou)
+
 [Get Started](/index)
 
 <!-- 插入背景图片 -->
